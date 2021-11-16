@@ -1,0 +1,46 @@
+Vamos a armar la estructura carpetas y a ubicar los archivos:
+
+ -Portafolio (Dentro vamos a poner todos nuestros archivos)
+    -fonts
+        -fuentes tipográficas (Las fuentes tipográficas las vamos a importar, NO las vamos
+                            a tener de forma local. Para esto vamos a ir a la web de 
+                            "https://fonts.google.com/", seleccionamos una 
+                            fuente que nos guste, por ejemplo "Open Sans", copiamos
+                            su <link> y lo pegamos en el <head></head>. Recuerden que se 
+                            debe pegar el <link> antes de nuestro archivo CSS para que 
+                            se carguen previamente. A continuación, les dejo el link de 
+                            las fuentes que vamos a utilizar:
+                            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">)
+    -css
+        -normalize.css (Este archivo nos permite cambiar los estilos que nos 
+                       agregan por defecto los navegadores. Si recuerdan en las
+                       anteriores practicas todo el tiempo les aclaro que los
+                       navegadores agregan un "padding" y un "margin" por defecto
+                       y esto nosotros se lo quitábamos, pero hay una mejor forma 
+                       de hacerlo y es con "normalize.css".
+                       Este archivo se descarga de la siguiente web: 
+                       http://necolas.github.io/normalize.css/)
+        -all.min.css (Por medio de Font Awesome vamos a poner iconos en nuestro sitio: 
+                     Paso 1°: Tenemos que ir a la web de Font Awesome:
+                     https://fontawesome.com/. 
+                     Paso 2°: Una vez en el sitio vamos al apartado de "Download" y particularmente 
+                     vamos a descargar "Free for Web" (gratis para web):
+                     https://fontawesome.com/download.
+                     De esta manera tenemos de manera local todos los iconos gratis que nos ofrece
+                     Font Awesome.
+                     Paso 3°: Los iconos de Font Awesome se descargan en un archivo comprimido el
+                     cual debemos descomprimir. Una vez que se descomprimió podemos copiar el 
+                     archivo "all.min.css" que se encuentra dentro.
+        -estilos.css (En este archivo vamos a tener los estilos particulares que vamos a aplicar a nuestro sitio)
+    -img (Dentro vamos a poner las imágenes que vamos a estar utilizando)
+        -trabajos (Van a representar nuestros trabajos. Deje ocho imágenes de ejemplo,
+                  ustedes podrían poner imágenes propias solo les recomiendo que 
+                  que tengan las medidas de 500x500)
+        -bg.jpg (Es nuestro fondo)
+        -foto.jpg (Representa un foto de perfil)    
+    -index.html
+
+
+###################################################################################
+
+•	BrandColors: https://brandcolors.net/ --> Te da los colores oficiales de muchas marcas como Facebook, Instagram, etc.

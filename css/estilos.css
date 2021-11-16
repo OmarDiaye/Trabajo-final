@@ -1,0 +1,439 @@
+* {
+	
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;/* Permite regular si los contenidos que sobresalen se seguirán viendo,
+	 si se ocultarán o si aparecerá una barra de scroll en el documento basicamente regula los margeenes par que no se salga
+	 el contenido del contenedor padre*/
+}
+
+/* INICIO DEL HEADER */
+
+
+
+header{  
+	width: 100%;
+	height: 500px;
+	background: url('../img/imagen-principal.jpg');
+	background-size: 200%;
+	animation: movimiento 10s infinite linear alternate; /*animacion del background del header para  agregar algo de dinamica al diseño*/
+	
+}
+@keyframes movimiento{ /*funcion de movimiento*/
+	from{
+		background-position: bottom left;
+	}to{/*genera un movimiento desde abajo a la  hacia arriba a la derecha */
+		background-position: top right; 
+	}
+}
+
+/* MENU DEL HEADER */
+
+header .menu {
+	margin: 40px 0;
+	text-align: right;
+}
+
+header .menu a {
+	margin: 0 20px;
+	color: #fff;
+	display: inline-block;
+	padding: 9px;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	font-size: 1em;
+}
+
+header .menu a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+/* FIN DEL MENU DEL HEADER*/
+
+
+/* HEADER:CONTENEDOR DEL TEXTO */
+
+header .contenedor-texto {
+	margin: 190px 0;
+	display: flex;
+	justify-content:center;
+	align-content: center;
+}
+
+header .contenedor-texto .texto {
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   border-radius: 3px;
+   display: inline-block;
+   text-align: center;
+   padding: 20px 60px;
+}
+
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+	color: #fff;
+	font-weight: 300; /* ya esta la fuente linkeada desde otro archivo css y aca se indica el subtipo  300 para light 400 regular 600 semi-bold 700 bold*/
+	margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+	margin-bottom: 10px;
+	font-size: 50px;
+	line-height: 50px;
+}
+header .contenedor-texto .texto .profesion {
+	font-size: 25px;
+	list-style: none;
+}
+
+/* FIN DEL CONTENEDOR DEL TEXTO*/
+/* FIN DEL HEADER */
+
+/* INICIO MAIN*/
+  
+ .main .contenedor {
+ 	overflow: visible;
+ }
+
+/* MAIN ACERCA DE*/
+.main .acerca-de {
+	text-align: center;
+}
+
+.main .acerca-de .foto {
+	 margin-top: -60;
+}
+
+.main .acerca-de .foto img {
+	vertical-align: top;
+	border-radius:50px;
+	border: 5px solid rgba(255, 255, 255, .20) ;
+}
+
+.main .acerca-de .texto .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 50px;
+	font-weight: 300;
+	color:#ff820d;
+	text-align: center;
+}
+
+.main .acerca-de .texto .bold {
+	color: #3895ea;
+	text-decoration: underline;
+}
+
+/* FIN ACERCA DE*/
+
+
+/* MAIN: TRABAJOS */
+ .main .trabajos {
+ 	background: #f2f2f2;
+ 	padding: 60px 0;
+ }
+
+ .main .trabajos .contenedor {
+ 	overflow: hidden;
+ }
+
+ .main .trabajos .titulo {
+ 	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color:#323068;
+	text-align: center;
+ }
+
+ .main .trabajos .contenedor-trabajos {
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content:space-between;
+ }
+
+
+ .main .trabajos .contenedor-trabajos .trabajo {
+ 	width:23%;
+ 	margin-bottom: 40px;
+ }
+ .main .trabajos .contenedor-trabajos .trabajo .thumb {
+ 	width: 100%;
+ 	margin-bottom: 10px;
+ }
+  .main .trabajos .contenedor-trabajos .trabajo .thumb img {
+ 	width: 100%;
+ 	vertical-align:top;
+ 	border-radius: 6px;
+ }
+  .main .trabajos .contenedor-trabajos .trabajo .descripcion  {
+ 	text-align: center;
+ }
+  .main .trabajos .contenedor-trabajos .trabajo .nombre{
+ 	font-weight: 700;
+ 	color: #3895ea;
+ 	margin-bottom: 10px;
+ }
+
+  .main .trabajos .contenedor-trabajos .trabajo .categoria{
+ 	font: 14px;
+ 	color: #636363;
+ }
+
+
+
+
+/*FIN MAIN TRABAJOS
+
+/* FIN DEL MAIN*/
+
+
+
+
+/* INICIO FOOTER */
+   
+
+   /* FORMULARIO*/
+   .form_wrap{
+ 		width:850px;
+ 		height:500px;
+ 		margin: 50px auto;
+ 		display: flex;
+
+ 		background: #fff;
+ 		border-radius: 10px;
+ 		overflow: hidden;
+ 		box-shadow: 0px 0px 20px rgba(0,0,0, 0.2); 
+   
+   }
+
+   /*Informacion de contacto */
+    .contact_info::before{
+    	content: '';
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	background: #4091EC;
+    	opacity: 0.9;
+    }
+     
+    .contact_info{
+    	width: 38%;
+     position: relative;
+     background-image: url(../videojuegos.jpg);
+     background-size: cover;
+     background-position: center center;
+    }
+   /*fin de informacion de contacto*/
+   
+
+.info_title,
+.info_items{
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+
+.info_title{
+	margin-bottom: 60px;
+}
+
+.info_title span{
+	font-size: 100px;
+	display: block;
+	text-align: center ;
+	margin-bottom: 15px;
+
+}
+
+.info_title h2{
+	font-size: 35px;
+	text-align: center;
+}
+
+.info_title p{
+	display: flex;
+	align-items: center;
+
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+
+.info_items p:nth-child(1) span /*pseudoclase que llama al parrafo 1 y al spam que esta dentro de este*/{
+	font-size: 30px;
+	margin-right:20px;
+}
+.info_items p:nth-child(2) span /*pseudoclase que llama al parrafo 2 y al spam que esta dentro de este*/{
+	font-size: 50px;
+	margin-right: 15px;
+	margin-left: 4px;
+}
+.iconos{
+	align-self: center;
+
+}
+
+ /*contacto*/
+ form.form_contact{
+ 	width: 62%;
+ 	padding: 30px 40px;
+ }
+
+ form.form_contact h2 {
+ 	font-size: 25px;
+ 	font-weight: 600;
+ 	color: #303030;
+ 	margin-bottom: 30px;
+ }
+  
+  form.form_contact .user_info{
+  	display: flex;
+  	flex-direction: column;
+  }
+
+  form.form_contact label{
+  	font-weight: 600;
+  }
+
+  form.form_contact input,
+  form.form_contact textarea{
+  	width: 100%;
+  	padding:8px 0px 5px;
+  	margin-bottom: 20px;
+  	border: none;
+  	border-bottom: 2px solid #D1D1D1;
+  	font-family: 'Open sans';
+  	color: #5A5A5A;
+  	font-size: 14px;
+  	font-weight: 400;
+  }
+ form.form_contact textarea{
+ 	max-width: 100%;
+ 	min-width: 100%;
+ 	max-height: 90px;
+ }
+
+ form.form_contact input[type="submit"]{
+ 	width: 180px;
+ 	background: #4091EC;
+ 	padding: 10px;
+ 	border: none;
+ 	border-radius: 25px;
+
+ 	align-self: flex-end;
+
+ 	color: #fff;
+ 	font-family:'Open sans';
+ 	font-size: 16px;
+ 	font-weight: 600;
+ 	cursor: pointer;
+ }
+
+form.form_contact input[type="submit"]:hover{
+	background: #3371B6;
+}
+ /*fin de contacto*/
+/*FIN DE FORMULARIO*/
+
+
+/*Ventana de errores*/
+
+.modal_wrap{
+	width: 100%;
+	height: 100vh;/*de esta manera ocupa toda la pantalla*/
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*fin de ventana de errores*/
+
+
+/* FOOTER REDES SOCIALES */
+  footer .redes-sociales {
+  	background: #1e2b38;
+  	padding: 60px 0;
+  }
+
+  footer .redes-sociales .contenedor {
+  	display: flex;
+  	justify-content: center;  
+  }
+
+  footer .redes-sociales a {
+  	color: #fff;
+  	text-align: center;
+  	width: 100px;
+  	display: block;
+  	padding: 15px 0;
+  	border-radius: 3px;
+  	font-size: 30px;
+  	margin: 0 20px;
+  }
+
+footer .redes-sociales .twitter:hover {background: #1da1f2;}
+footer .redes-sociales .facebook:hover {background: #3b5998;}
+footer .redes-sociales .youtube:hover {background: #cd201f;}
+footer .redes-sociales .github:hover {background: #666666;}
+footer .redes-sociales .instagram:hover {background: #3f729b;}
+
+
+/* FIN FOOTER REDES SOCIALES*/
+
+/* FIN DEL FOOTER */
+
+
+/* MEDIA QUERES */
+  @media screen and (max-width: 800px){
+ header .menu {
+ 	text-align: center;
+ }
+
+ .main .trabajos .contenedor-trabajos .trabajo {
+ 	width: 46%;
+ }
+
+}
+
+@media screen and (max-width: 500px){
+	header .contenedor-texto .texto .nombre {
+		font-size: 35px;
+	}
+
+    header .contenedor-texto .texto .profesion {
+    	font-size: 18px;
+    }	
+
+    footer .redes-sociales .contenedor {
+    	flex-wrap: wrap;
+    	padding: 20px 0;
+    }
+}
+  
+
+
+/* FIN DE MEDIA QUERES*/
